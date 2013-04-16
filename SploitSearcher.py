@@ -56,7 +56,7 @@ def searchExploitDB():
 def installDB():
 	urllib.urlretrieve("http://www.exploit-db.com/archive.tar.bz2", "archive.tar.bz2")
 	os.system("tar -jxvf archive.tar.bz2")
-	os.system("chmod 777 files.csv")
+	os.system("chmod +r files.csv")
 
 
 def localsearch():
